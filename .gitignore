@@ -1,0 +1,5 @@
+/**/.DS_Store
+/lib
+
+# Local cache of Rubocop remote config
+.rubocop-*
