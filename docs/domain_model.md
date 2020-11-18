@@ -192,5 +192,7 @@ I would like a graphical interface to manage and review the thermostat functiona
 
 
 ## Ongoing Development Changes / Discussions
+- discussion if 'power save' function should be separate module / class
+  - separation of 'energy consumption' and 'temperature control'
+  - might need a 'management' module or overseer framework
 -
-- 

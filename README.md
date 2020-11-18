@@ -17,4 +17,9 @@
 
 (In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
 
-## User stories:
+## Tools / Setup:
+- Using Jasmine for the testing
+- NodeJS for the local running of the code / feature testing
+- Chrome for the default browser for the user interface work at the end
+- standard TDD / BDD development process, working from the interpreted user stories from the given spec.
+- doing minimum feature delivery steps.
