@@ -2,7 +2,12 @@
 
 class Thermostat {
   constructor() {
-    this.DEFAULT_TEMPERATURE = 20
+    this.MINIMUM_TEMPERATURE = 10;
+    this.DEFAULT_TEMPERATURE = 20;
+    this.MAXIMUM_TEMP_POWERSAVE_ON = 25;
+    this.MAXIMUM_TEMP_POWERSAVE_OFF = 32;
+    this.ENERGY_BAND_LIMIT_LOW = 17;
+    this.ENERGY_BAND_LIMIT_MEDIUM = 25;
     this.powerSaveMode = true;
     this.temperature = this.DEFAULT_TEMPERATURE;
   };
@@ -13,19 +18,21 @@ class Thermostat {
 
   up() {
     if(this.isInPowerSaveMode()) {
-      if(++this.temperature > 25) {
-        this.temperature = 25;
+      if(++this.temperature > this.MAXIMUM_TEMP_POWERSAVE_ON) {
+        this.temperature = this.MAXIMUM_TEMP_POWERSAVE_ON;
       };
     } else {
-      if(++this.temperature > 32) {
-        this.temperature = 32;
+      if(++this.temperature > this.MAXIMUM_TEMP_POWERSAVE_OFF) {
+        this.temperature = this.MAXIMUM_TEMP_POWERSAVE_OFF;
       };
     };
     return this.temperature;
   };
 
   down() {
-    if (--this.temperature < 10) { this.temperature = 10; };
+    if (--this.temperature < this.MINIMUM_TEMPERATURE) {
+      this.temperature = this.MINIMUM_TEMPERATURE;
+    };
     return this.temperature;
   };
 
@@ -45,9 +52,9 @@ class Thermostat {
   };
 
   getEnergyUsageBand() {
-    if(this.getCurrentTemperature() <= 17) {
+    if(this.getCurrentTemperature() <= this.ENERGY_BAND_LIMIT_LOW) {
       return 'low';
-    } else if(this.getCurrentTemperature() <=25) {
+    } else if(this.getCurrentTemperature() <= this.ENERGY_BAND_LIMIT_MEDIUM) {
       return 'medium';
     } else {
       return 'high';
