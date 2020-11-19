@@ -27,8 +27,8 @@
 .basicContainer {
   position: relative;
   text-align: center;
-  height: 300px;
   width: 400px;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,14 +40,61 @@
 
 .temperature {
   position: absolute;
+  left: 172px;
+  top: 68px;
+  z-index: 2;
+}
+
+.basicTop {
+  position:absolute;
   left: 137px;
-  top: 37px;
-  cursor: cell;
+  top: -28px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.basicBottom {
+  position:absolute;
+  left: 137px;
+  top: 100px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.plusTop {
+  position:absolute;
+  left: 137px;
+  top: -28px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.plusBottom {
+  position:absolute;
+  left: 137px;
+  top: 100px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.usageLow {
+  fill: green;
+  stroke: green;
+}
+
+.usageMedium {
+  fill: orange;
+  stroke: orange;
+}
+
+.usageHigh {
+  fill: red;
+  stroke: red;
 }
 
 .basicContainer .logo {
   position: absolute;
-  left: 158px;
+  left: 159px;
   top: 2px;
   cursor: crosshair;
 }

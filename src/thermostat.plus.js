@@ -1,6 +1,6 @@
 'use strict';
 
-class EnergyManager extends Thermostat {
+class ThermostatPlus extends Thermostat {
   constructor () {
     super();
     this.maximumTemperature = 25;
@@ -17,6 +17,9 @@ class EnergyManager extends Thermostat {
     this.powerSaveMode = !this.powerSaveMode;
     if (this.isInPowerSaveMode()) {
       this.maximumTemperature = 25;
+      if(this.getCurrentTemperature() > this.maximumTemperature) {
+        this.temperature = this.maximumTemperature;
+      };
     } else {
       this.maximumTemperature = 32;
     };

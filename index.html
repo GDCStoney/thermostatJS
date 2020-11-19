@@ -4,6 +4,7 @@
 <head>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="./src/thermostat.js"></script>
+  <script src="./src/thermostat.plus.js"></script>
   <script src="./src/interface.js"></script>
   <link rel="stylesheet" href="./public/stylesheets/main.css" >
 </head>
@@ -17,27 +18,26 @@
         </linearGradient>
       </defs>
       <ellipse cx="180" cy="70" rx="170" ry="55" fill="url(#grad1)" />
-      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">Thermostat</text>
+      <text fill="#ffffff" strok="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">Thermostat</text>
       Sorry, your browser does not support inline SVG.
     </svg>
   </div>
 
   <div class="basicContainer background">
     <img  class="background" src="./public/images/plusBase01.png" height="200px">
-    <svg class="temperature" height="128" width="128">
-      <circle cx="64" cy="64" r="64" fill="orange" />
-      <text id="temp001" fill="#ffffff" font-size="45" font-family="Verdana" x="34" y="77">20</text>
+    <svg class="basicTop" id="basicTop" height='128' width='132'>
+      <path d="M1,128 a1,1 0 0,1 125,0z" fill='orange' stroke='orange' stroke-width='2'/>
+    </svg>
+    <svg class="basicBottom" id="basicBottom" height='128' width='132'>
+      <path d="M1,1 a1,1 0 1,0 125,0z" fill='orange' stroke='orange' stroke-width='2'/>
+    </svg>
+    <svg class="temperature" height='47' width="60">
+      <text id="basicStatus" fill="#ffffff" strok="#ffffff" font-size="45" font-family="Verdana" x="0" y="45">20</text>
       Sorry, your browser does not support inline SVG.
     </svg>
     <svg class="logo" height="30px" width="60px">
-      <text fill="#ffffff" font-size = "12" font-family="Verdana" x="29" y="25">Best</text>
+      <text fill="#ffffff" strok="#ffffff" font-size = "12" font-family="Verdana" x="29" y="25">Best</text>
     <svg>
-    <div height="34px" width="60px">
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider round"></span>
-    </label>
-    </div>
 
   </div>
   <div class="logoContainer">
@@ -56,17 +56,24 @@
   </div>
   <div class="basicContainer">
     <img  src="./public/images/plusBase01.png" height="200px">
-    <svg class="temperature" height="126" width="126">
-      <circle cx="63" cy="63" r="63" fill="#449900" />
-      <text id="temp002" fill="#ffffff" font-size="45" font-family="Verdana" x="35" y="76">20</text>
+    <div class="plusButtons">
+    <svg class="plusTop" id="plusTop" height='128' width='132'>
+      <path id="plusTopPath" d="M1,128 a1,1 0 0,1 125,0z" stroke-width='2'/>
+    </svg>
+    <svg class="plusBottom" id="plusBottom" height='64' width='128'>
+      <path id="plusBottomPath" d="M1,1 a1,1 0 1,0 125,0z" stroke-width='2'/>
+    </svg>
+    </div>
+    <svg class="temperature" height="47" width="60">
+      <text id="plusStatus" fill="#ffffff" strok="#ffffff" font-size="45" font-family="Verdana" x="0" y="45">20</text>
       Sorry, your browser does not support inline SVG.
     </svg>
     <svg class="logo" height="30px" width="60px">
-      <text fill="#ffffff" font-size = "12" font-family="Verdana" x="29" y="25">Best</text>
+      <text fill="#ffffff" strok="#ffffff" font-size = "12" font-family="Verdana" x="29" y="25">Best</text>
     <svg>
     <div height="34px" width="60px">
     <label class="switch">
-      <input type="checkbox">
+      <input id="plusPowerSaveStatus" type="checkbox">
       <span class="slider round"></span>
     </label>
     </div>

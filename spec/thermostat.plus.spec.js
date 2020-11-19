@@ -1,9 +1,9 @@
 'use strict';
 
-describe('Thermostat with Energy Manager', () => {
+describe('Thermostat PLUS with Energy Manager', () => {
   let thermostatPlus;
   beforeEach( () => {
-    thermostatPlus = new EnergyManager;
+    thermostatPlus = new ThermostatPlus;
   });
 
   it('US5 1- thermostatPlus in powerSaveMode by default', () => {
