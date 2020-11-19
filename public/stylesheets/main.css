@@ -53,12 +53,20 @@
   z-index: 1;
 }
 
+.basicTop:hover {
+  text-shadow: 2px 3px #505050;
+}
+
 .basicBottom {
   position:absolute;
   left: 137px;
   top: 100px;
   cursor: pointer;
   z-index: 1;
+}
+
+.basicBottom:hover {
+  text-shadow: 2px 3px #505050;
 }
 
 .plusTop {
@@ -69,12 +77,20 @@
   z-index: 1;
 }
 
+.plusTop:hover {
+  text-shadow: 2px 3px #505050;
+}
+
 .plusBottom {
   position:absolute;
   left: 137px;
   top: 100px;
   cursor: pointer;
   z-index: 1;
+}
+
+.plusBottom:hover {
+  text-shadow: 2px 3px #505050;
 }
 
 .usageLow {
@@ -156,6 +172,12 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
+}
+
+.slider.round:hover {
+  left: -2px;
+  top: -2px;
+  box-shadow: 2px 2px #505050;
 }
 
 .slider.round:before {
