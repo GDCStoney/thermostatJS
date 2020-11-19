@@ -4,6 +4,14 @@
 
 [Domain Model](./docs/domain_model.md)
 
+## Interface guidance
+- The interface is in index.html (root of this repo)
+- clicking the top of the central disc, increments the temp
+- clicking on the bottom of the central disc, decrements the temp
+- clicking on the button below the thermostat (for the PLUS thermostat), changes the Power Save Mode
+- double clicking the central temperature readout, resets the thermostat to defaults
+
+
 ## specification:
 - Thermostat starts at 20 degrees
 - You can increase the temperature with an up function
