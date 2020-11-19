@@ -55,18 +55,20 @@
 
 .basicTop:hover {
   text-shadow: 2px 3px #505050;
+  stroke: #505050;
 }
 
 .basicBottom {
   position:absolute;
   left: 137px;
-  top: 100px;
+  top: 99px;
   cursor: pointer;
   z-index: 1;
 }
 
 .basicBottom:hover {
   text-shadow: 2px 3px #505050;
+  stroke: #505050;
 }
 
 .plusTop {
@@ -79,6 +81,7 @@
 
 .plusTop:hover {
   text-shadow: 2px 3px #505050;
+  stroke: #505050;
 }
 
 .plusBottom {
@@ -91,6 +94,7 @@
 
 .plusBottom:hover {
   text-shadow: 2px 3px #505050;
+  stroke: #505050;
 }
 
 .usageLow {
