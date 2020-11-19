@@ -1,3 +1,10 @@
+.background {
+  background-color: rgb(193,212,333);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .temp_control {
   height: 20px;
 }
@@ -6,7 +13,7 @@
   height: 40px;
 }
 
-.LogoContainer {
+.logoContainer {
   height: 140px;
   margin-left: auto;
   margin-right: auto
@@ -14,10 +21,12 @@
 
 .basicLogo {
   float: right;
+  cursor: default;
 }
 
 .basicContainer {
   position: relative;
+  text-align: center;
   height: 300px;
   width: 400px;
   margin-left: auto;
@@ -26,16 +35,26 @@
 
 .basicContainer img {
   z-index: -1;
+  cursor: crosshair;
 }
 
 .temperature {
   position: absolute;
-  left: 110px;
-  top: 34px;
+  left: 137px;
+  top: 37px;
+  cursor: cell;
+}
+
+.basicContainer .logo {
+  position: absolute;
+  left: 158px;
+  top: 2px;
+  cursor: crosshair;
 }
 
 .plusLogo {
   float: left;
+  cursor: default;
 }
 
 .switch {
@@ -57,7 +76,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #D01;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -75,7 +94,7 @@
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: rgb(0,215,0);
 }
 
 .input:focus + .slider {

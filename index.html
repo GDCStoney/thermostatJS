@@ -7,8 +7,8 @@
   <script src="./src/interface.js"></script>
   <link rel="stylesheet" href="./public/stylesheets/main.css" >
 </head>
-<body>
-  <div class="LogoContainer">
+<body class="background">
+  <div class="logoContainer">
     <svg class="basicLogo" height="130" width="350">
       <defs>
         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -22,15 +22,25 @@
     </svg>
   </div>
 
-  <div class="basicContainer">
-    <img  src="./public/images/plusBase.jpg" height="200px">
-    <svg class="temperature" height="114" width="114">
-      <circle cx="57" cy="57" r="57" fill="orange" />
-      <text id="temp001" fill="#ffffff" font-size="45" font-family="Verdana" x="29" y="72">20</text>
+  <div class="basicContainer background">
+    <img  class="background" src="./public/images/plusBase01.png" height="200px">
+    <svg class="temperature" height="128" width="128">
+      <circle cx="64" cy="64" r="64" fill="orange" />
+      <text id="temp001" fill="#ffffff" font-size="45" font-family="Verdana" x="34" y="77">20</text>
       Sorry, your browser does not support inline SVG.
     </svg>
+    <svg class="logo" height="30px" width="60px">
+      <text fill="#ffffff" font-size = "12" font-family="Verdana" x="29" y="25">Best</text>
+    <svg>
+    <div height="34px" width="60px">
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    </div>
+
   </div>
-  <div class="LogoContainer">
+  <div class="logoContainer">
     <svg class="plusLogo" height="130" width="390">
       <defs>
         <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -45,17 +55,22 @@
     </svg>
   </div>
   <div class="basicContainer">
-    <img  src="./public/images/plusBase.jpg" height="200px">
-    <svg class="temperature" height="114" width="114">
-      <circle cx="57" cy="57" r="57" fill="#449900" />
-      <text id="temp002" fill="#ffffff" font-size="45" font-family="Verdana" x="29" y="72">20</text>
+    <img  src="./public/images/plusBase01.png" height="200px">
+    <svg class="temperature" height="126" width="126">
+      <circle cx="63" cy="63" r="63" fill="#449900" />
+      <text id="temp002" fill="#ffffff" font-size="45" font-family="Verdana" x="35" y="76">20</text>
       Sorry, your browser does not support inline SVG.
     </svg>
+    <svg class="logo" height="30px" width="60px">
+      <text fill="#ffffff" font-size = "12" font-family="Verdana" x="29" y="25">Best</text>
+    <svg>
+    <div height="34px" width="60px">
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    </div>
   </div>
 
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label>
 </body>
 </html>
