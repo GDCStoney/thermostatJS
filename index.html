@@ -8,8 +8,51 @@
   <link rel="stylesheet" href="./public/stylesheets/main.css" >
 </head>
 <body>
-  <div style="height: 200px">
+  <div class="LogoContainer">
+    <svg class="basicLogo" height="130" width="350">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0); stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0); stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="180" cy="70" rx="170" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">Thermostat</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
   </div>
+
+  <div class="basicContainer">
+    <img  src="./public/images/plusBase.jpg" height="200px">
+    <svg class="temperature" height="114" width="114">
+      <circle cx="57" cy="57" r="57" fill="orange" />
+      <text id="temp001" fill="#ffffff" font-size="45" font-family="Verdana" x="29" y="72">20</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+  </div>
+  <div class="LogoContainer">
+    <svg class="plusLogo" height="130" width="390">
+      <defs>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(0,255,50); stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,50,0); stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="195" cy="70" rx="190" ry="55" fill="url(#grad2)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="90">Thermostat</text>
+      <text fill="#00bb00" font-size="55" font-family="Verdana" x="300" y="71">+</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+  </div>
+  <div class="basicContainer">
+    <img  src="./public/images/plusBase.jpg" height="200px">
+    <svg class="temperature" height="114" width="114">
+      <circle cx="57" cy="57" r="57" fill="#449900" />
+      <text id="temp002" fill="#ffffff" font-size="45" font-family="Verdana" x="29" y="72">20</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+  </div>
+
   <label class="switch">
     <input type="checkbox">
     <span class="slider round"></span>

@@ -6,6 +6,38 @@
   height: 40px;
 }
 
+.LogoContainer {
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.basicLogo {
+  float: right;
+}
+
+.basicContainer {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.basicContainer img {
+  z-index: -1;
+}
+
+.temperature {
+  position: absolute;
+  left: 110px;
+  top: 34px;
+}
+
+.plusLogo {
+  float: left;
+}
+
 .switch {
   position: relative;
   display: inline-block;

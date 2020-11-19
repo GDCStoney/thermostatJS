@@ -1,7 +1,7 @@
 $(document).ready(function() {
+  let thermostat = new Thermostat();
+  $('#temp001').text('22');
+  $('#temp002').text('18');
 
-  $('.thermo_up').text('im here');
-  $(".thermo_up").click(function() {
-    $(".thermo_up").height('200px');
-    $('.thermo_up').text("Hey there");
-  });  });
+  $('#temp002').text(thermostat.getCurrentTemperature());
+});
