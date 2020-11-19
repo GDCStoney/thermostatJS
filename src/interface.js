@@ -60,12 +60,13 @@ $(document).ready(function() {
     thermostatPlus.reset();
     $('#plusStatus').text(thermostatPlus.getCurrentTemperature());
     $('#plusPowerSaveStatus').prop('checked', thermostatPlus.isInPowerSaveMode());
+    setEnergyBand();
   });
 
   $('#plusPowerSaveStatus').click(() => {
     thermostatPlus.switchPowerSaveMode();
     $('#plusStatus').text(thermostatPlus.getCurrentTemperature());
     $('#plusPowerSaveStatus').prop('checked', thermostatPlus.isInPowerSaveMode());
-    setEnergyBand();  
+    setEnergyBand();
   });
 });
